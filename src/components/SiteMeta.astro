@@ -3,7 +3,7 @@ import { ViewTransitions } from 'astro:transitions'
 
 const { title, description, url, image, author } = Astro.props
 
-let subtitle = 'Accessible Astro Starter'
+let subtitle = 'Engineering and Technology Blog'
 ---
 
 <!-- general meta -->
@@ -19,6 +19,7 @@ let subtitle = 'Accessible Astro Starter'
 <meta property="og:image" content={Astro.site ? `${Astro.site}${image}` : image} />
 
 <!-- twitter card -->
+<meta name="twitter:card" content="summary_large_image" />
 
 <!-- page title -->
 <title>{title} - {subtitle}</title>
